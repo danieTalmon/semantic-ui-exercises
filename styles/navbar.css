@@ -1,0 +1,37 @@
+#prodect-count {
+  margin-bottom: 0;
+  padding-right: 1.25rem;
+  margin-right: 0.4rem;
+}
+#amaRomach-logo {
+  padding-top: 0;
+  padding-left: 0;
+}
+#amaRomach-search-bar {
+  padding-bottom: 0;
+}
+#browse-item {
+  padding: 1rem 1rem 0 0;
+}
+.padding-bottom-zero {
+  padding-bottom: 0 !important;
+}
+.compact-icon {
+  margin-left: 0.4rem !important;
+}
+.header-link:hover {
+  color: #aca220 !important;
+  text-decoration: underline !important;
+}
+.card-image:hover {
+  filter: brightness(120%) !important;
+}
+#total-price {
+  margin-left: 3em !important;
+}
+.amaRomach-cart-item {
+  margin-left: 1.5em !important;
+}
+.red-close-icon {
+  margin: 0 2rem 0 0 !important;
+}
