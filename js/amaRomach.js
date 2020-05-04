@@ -1,11 +1,8 @@
 $(document).ready(function(){
 
-$('.browse')
-  .popup({
-    position:'bottom center',
-    popup : $('.popup'),
-    on: 'click',
-  });
+$('.ui.dropdown')
+.dropdown()
+;
 
   $('.rating')
   .rating({
