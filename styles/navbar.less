@@ -55,12 +55,13 @@
     width: 22rem !important;
   }
 
-  .right-parenthesis:after {
-      content: "\0029" !important ;
-      color: #ff851b !important;
-  }
-
-  .left-parenthesis:before {
-    content: "\0028" !important ;
+.parenthesis {
     color: #ff851b !important;
-}
+
+    &::before {
+        content: "\0028" !important ;
+    }
+    &::after {
+        content: "\0029" !important ;
+    }
+  }
