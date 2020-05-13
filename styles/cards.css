@@ -1,6 +1,22 @@
 .amaRomach-cards {
   margin-top: 2.5em !important;
+  margin-left: 4% !important;
 }
 .amaRomach-card {
-  margin: 0.875em 3em !important;
+  flex: 1 !important;
+  flex-basis: 0 !important;
+}
+#total-price {
+  margin-left: 3em !important;
+}
+.amaRomach-cart-item {
+  margin-left: 1.5em !important;
+  font-size: 2rem !important;
+}
+.header-link:hover {
+  color: #aca220 !important;
+  text-decoration: underline !important;
+}
+.card-image:hover {
+  filter: brightness(120%) !important;
 }

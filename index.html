@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/amazon-icon.jpg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/cart.css">
     <link rel="stylesheet" type="text/css" href="styles/cards.css">
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -28,51 +29,54 @@
             <div id="amaRomach-search-bar" class="ui inverted segment ">
                 <div class="ui small left fluid icon input">
                 <input  type="text" placeholder="Search...">
-                    <button class="ui yellow button" >
-                        <i class="search icon"></i>
+                    <button class="ui primary button" >
+                        <i class="ui large search icon"></i>
                     </button>
                 </div>
                 </div>
         </div>
         </div>
-        <div class="right floated center aligned four wide column padding-bottom-zero">
-          <div class="ui inverted segment" style=" padding-bottom: 0;">
-              <div class="ui inverted compact text  menu padding-bottom-zero">
-                <div id="browse-item" class="ui pointing dropdown item">
-                  Account&Lists
-                  <i class="dropdown white icon compact-icon"></i>
-                  <div class="menu amaRomach-dropdown-menu">
-                    <div class="ui equal height divided grid">
-                      <div class="six wide column">
-                        <h4 class="ui header">Your Account</h4>
-                        <div class="ui link list">
-                          <a class="item">SIGN IN</a>
-                          <a class="item">SIGN OUT</a>
-                        </div>
+        <div class="row padding-bottom-zero">
+            <div class="ui right floated center aligned six wide column two column grid padding-bottom-zero">
+              <div id="browse-container" class="six wide column padding-bottom-zero">
+                <div id="browse-item" class="ui inline floating dropdown right floated"> 
+                  <div class="text"> <h3> Account&Lists </h3> </div>
+                  <i class="ui large dropdown icon"></i> 
+                <div class="menu ui two column relaxed divided grid">
+                  <div class="row">
+                    <div class="column">
+                      <h4 class="ui header">Your Account</h4>
+                      <div class="ui link list">
+                        <a class="item">SIGN IN</a>
+                        <a class="item">SIGN OUT</a>
                       </div>
-                      <div class="six wide column">
-                        <h4 class="ui header">Your List</h4>
-                        <div class="ui link list">
-                          <a class="item">Create New List</a>
-                        </div>
+                    </div>
+                    <div class="column">
+                      <h4 class="ui header">Your List</h4>
+                      <div class="ui link list">
+                        <a class="item">Create New List</a>
                       </div>
                     </div>
                   </div>
+                  </div>
                 </div>
-              <a id="cart" class=" item">
-                <span><h5 id="prodect-count" class="ui orange header inverted aligned top">
-                  <span class="parenthesis">2</span>
-                </h5>
-                  <i class="cart shopping white icon"></i>
-                  cart
-                </span>
-              </a>
               </div>
+              <div class="center aligned six wide column ">
+                <div id="cart" class="ui inverted segment padding-bottom-zero">
+                  <span id="product-count" class="parenthesis ui orange header">2</span>
+                  <div class="inline cart-link">
+                      <i class="ui shop large white right floated icon"></i>
+                      <h3 class="cart-header margin-top-zero">  cart </h3>
+                  </div>
+                  </div>
+              </div>
+              </div>
+                </div>
           </div>
-      </div>
+        </div> 
     </div>
   </div>
-  <div class="ui large modal">
+  <div class="ui small modal">
     <div class="header">
       Your Shopping Cart
     </div>
@@ -82,17 +86,17 @@
           <img src="images/coconut.jfif">
         </div>
         <div class="content">
-          <a class="header">coconut</a>
-          <div class="ui right floated"><i class="ui red close icon red-close-icon"></i></div>
+          <h3>coconut</h3>
+          <div class="ui left aliened right floated"><i class="ui small red close icon red-close-icon"></i></div>
           <div class="description">
             <div class="ui list">
               <div class="item">
-                <p>Good coconut make oil for your beard </p>
+                <h4>Good coconut make oil for your beard </h4>
               </div>
               <div class="item">
-                <p>
+                <h3>
                   <i class="shekel sign icon"></i>100.00
-                </p>
+                </h3>
               </div>
               <div class="item">
                 <div class="ui selection dropdown">
@@ -115,29 +119,23 @@
           <img src="images/jsBook.jfif">
         </div>
         <div class="content">
-          <a class="header">JS book for beginners</a>
-          <div class="ui right floated"><i class="ui red close icon red-close-icon"></i></div>
+          <h3>JS book for beginners</h3>
+          <div class="ui left aliened right floated"><i class="ui small red close icon red-close-icon"></i></div>
           <div class="description">
             <div class="ui list">
               <div class="item">
-                <p> Digital javascript book to start coding
-                  your first js website </p>
+                <h4> Digital javascript book to start coding
+                  your first js website </h4>
               </div>
               <div class="item">
-                <p>
+                <h3>
                   <i class="shekel sign icon"></i>330.00
-                </p>
+                </h3>
               </div>
               <div class="item">
-                <div class="ui dropdown">
-                  <div class="ui transparent input">
-                    <input type="button"  value="1">
-                  </div>
-                  <div class="menu">
-                      <div class="item" data-value="1">1</div>
-                      <div class="item" data-value="2">2</div>
-                  </div>
-                 </div>
+                <div class="ui transparent small-input input">
+                  <input type="number" value="1" >
+                </div>
               </div>
             </div>
           </div>
@@ -149,141 +147,150 @@
     </div>
     <div class="actions">
       <div id="close-modal" class="ui black cancel button">continue shopping</div>
-      <div id="approve-modal" class="ui yellow approve button">Checkout <i class="inverted cart shopping icon"></i></div>
+      <div id="approve-modal" class="ui primary button">Checkout <i class="cart shopping icon"></i></div>
     </div>
   </div>
   <div>
-    <div class="ui link cards amaRomach-cards">
-      <div class="card amaRomach-card">
-        <div class="image">
-          <img class="card-image" src="images/oatmeal.jfif">
-        </div>
-        <div class="content">
-          <div class="header header-link">Oatmeal</div>
-          <div class="description">
-            Hot and fluffy oatmeal & protein
-            powder cake
-          </div>
-        </div>
-        <div class="extra content">
-          <div class="ui list">
-            <div class="item">  
-              <span class="left floated">
-              <i class="shekel sign icon"></i>330.00
-              </span>
-            </div>
-            <div class="item">
-              <span class="left floated">
-                <div class="ui star rating" data-rating="3"></div>
-              </span>
-              <span class="right floated">
-                <button class="ui yellow button">
-                Add to cart
-              </button>
-            </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card amaRomach-card">
-        <div class="image">
-          <img class="card-image" src="images/webstorm.jfif">
-        </div>
-        <div class="content">
-          <div class="header header-link">WS license</div>
-          <div class="description">
-            Rate WS license. No need for
-            military emain
-          </div>
-        </div>
-        <div class="extra content">
-          <div class="ui list">
-            <div class="item">  
-            <span class="left floated">
-              <i class="shekel sign icon"></i>220.00
-            </span>
-            </div>
-            <div class="item">
-              <span class="left floated">
-                <div class="ui star rating" data-rating="3"></div>
-              </span>
-              <div>
-                <span class="right floated">
-                  <button class="ui yellow button">
-                  Add to cart
-                </button>
-              </span>
-              </div>
-            </div>
-        </div>
-        </div>
-      </div>
-      <div class="card amaRomach-card">
-        <div class="image">
-          <img class="card-image" src="images/coconut.jfif">
-        </div>
-        <div class="content">
-          <div class="header header-link">coconut</div>
-          <div class="description">
-            Good coconut to make oil for Your
-            beard
-          </div>
-        </div>
-        <div class="extra content">
-          <div class="ui list">
-            <div class="item">  
-              <span class="left floated">
-                <i class="shekel sign icon"></i>100.00
-              </span>
-            </div>
-            <div class="item">
-              <span class="left floated">
-                <div class="ui star rating" data-rating="3"></div>
-              </span>
-              <div>
-                <span class="right floated">
-                  <button class="ui yellow button">
-                  Add to cart
-                </button>
-              </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card amaRomach-card">
+    <div class="ui link cards four column stretched grid padded amaRomach-cards">
+      <div class="column">
+        <div class="ui fluid card">
           <div class="image">
-            <img  class="ui medium image card-image" src="images/beard exempt.jpg">
+            <img class="card-image" src="images/oatmeal.jfif">
           </div>
           <div class="content">
-            <div class="header header-link">Beard exempt</div>
+            <div class="header header-link">Oatmeal</div>
             <div class="description">
-              Your very own license to grow beard
+              Hot and fluffy oatmeal & protein
+              powder cake
             </div>
           </div>
           <div class="extra content">
             <div class="ui list">
               <div class="item">  
                 <span class="left floated">
-                  <i class="shekel sign icon"></i>777.00
+                <i class="shekel sign icon"></i>330.00
                 </span>
               </div>
-            <div class="item">
-              <span class="left floated">
-                <div class="ui star rating" data-rating="3"></div>
-              </span>
-              <div>
+              <div class="item">
+                <span class="left floated">
+                  <div class="ui star rating" data-rating="3"></div>
+                </span>
                 <span class="right floated">
-                  <button class="ui yellow button">
+                  <button class="ui primary button">
                   Add to cart
                 </button>
               </span>
               </div>
             </div>
-          </div>          
           </div>
+        </div>
       </div>
-      <div class="card amaRomach-card">
+        <div class="column">
+          <div class="ui fluid card ">
+            <div class="image">
+              <img class="card-image" src="images/webstorm.jfif">
+            </div>
+            <div class="content">
+              <div class="header header-link">WS license</div>
+              <div class="description">
+                Rate WS license. No need for
+                military emain
+              </div>
+            </div>
+            <div class="extra content">
+              <div class="ui list">
+                <div class="item">  
+                <span class="left floated">
+                  <i class="shekel sign icon"></i>220.00
+                </span>
+                </div>
+                <div class="item">
+                  <span class="left floated">
+                    <div class="ui star rating" data-rating="3"></div>
+                  </span>
+                  <div>
+                    <span class="right floated">
+                      <button class="ui primary button">
+                      Add to cart
+                    </button>
+                  </span>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui fluid card ">
+            <div class="image">
+              <img class="card-image" src="images/coconut.jfif">
+            </div>
+            <div class="content">
+              <div class="header header-link">coconut</div>
+              <div class="description">
+                Good coconut to make oil for Your
+                beard
+              </div>
+            </div>
+            <div class="extra content">
+              <div class="ui list">
+                <div class="item">  
+                  <span class="left floated">
+                    <i class="shekel sign icon"></i>100.00
+                  </span>
+                </div>
+                <div class="item">
+                  <span class="left floated">
+                    <div class="ui star rating" data-rating="3"></div>
+                  </span>
+                  <div>
+                    <span class="right floated">
+                      <button class="ui primary button">
+                      Add to cart
+                    </button>
+                  </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui fluid card">
+            <div class="image">
+              <img  class="ui medium image card-image" src="images/beard exempt.jpg">
+            </div>
+            <div class="content">
+              <div class="header header-link">Beard exempt</div>
+              <div class="description">
+                Your very own license to grow beard
+              </div>
+            </div>
+            <div class="extra content">
+              <div class="ui list">
+                <div class="item">  
+                  <span class="left floated">
+                    <i class="shekel sign icon"></i>777.00
+                  </span>
+                </div>
+              <div class="item">
+                <span class="left floated">
+                  <div class="ui star rating" data-rating="3"></div>
+                </span>
+                <div>
+                  <span class="right floated">
+                    <button class="ui primary button">
+                    Add to cart
+                  </button>
+                </span>
+                </div>
+              </div>
+            </div>          
+            </div>
+        </div>
+        </div>
+        <div class="column">
+          <div class="ui fluid card">
             <div class="image">
               <img class="card-image" src="images/freedom.jfif">
             </div>
@@ -299,13 +306,14 @@
                   <span class="left floated">
                     <i class="shekel sign icon"></i>1,000,000.00
                   </span>
+                </div>
                 <div class="item">
                   <span class="left floated">
                     <div class="ui star rating" data-rating="3"></div>
                   </span>
                   <div>
                     <span class="right floated">
-                      <button class="ui yellow button">
+                      <button class="ui primary button">
                       Add to cart
                     </button>
                   </span>
@@ -313,42 +321,44 @@
                 </div>
               </div>
             </div>
+      </div>
+        </div>
+        <div class="column">
+          <div class="ui fluid card">
+            <div class="image">
+              <img class="card-image" src="images/jsBook.jfif">
             </div>
-      </div>
-      <div class="card amaRomach-card">
-              <div class="image">
-                <img class="card-image" src="images/jsBook.jfif">
+            <div class="content">
+              <div class="header header-link">JS book for beginners</div>
+              <div class="description">
+                Digital javascript book to start coding
+                your first js website
               </div>
-              <div class="content">
-                <div class="header header-link">JS book for beginners</div>
-                <div class="description">
-                  Digital javascript book to start coding
-                  your first js website
+            </div>
+            <div class="extra content">
+              <div class="ui list">
+                <div class="item">  
+                  <span class="left floated">
+                    <i class="shekel sign icon"></i>330.00
+                  </span>
                 </div>
-              </div>
-              <div class="extra content">
-                <div class="ui list">
-                  <div class="item">  
-                    <span class="left floated">
-                      <i class="shekel sign icon"></i>330.00
-                    </span>
-                  </div>
-                  <div class="item">
-                    <span class="left floated">
-                      <div class="ui star rating" data-rating="3"></div>
-                    </span>
-                    <div>
-                      <span class="right floated">
-                        <button class="ui yellow button">
-                        Add to cart
-                      </button>
-                    </span>
-                    </div>
+                <div class="item">
+                  <span class="left floated">
+                    <div class="ui star rating" data-rating="3"></div>
+                  </span>
+                  <div>
+                    <span class="right floated">
+                      <button class="ui primary button">
+                      Add to cart
+                    </button>
+                  </span>
                   </div>
                 </div>
               </div>
-      </div>
-    </div>
-  </div>       
+            </div>
+        </div>
+      </div> 
+    </div> 
+  </div>    
 </body>
 </html>
