@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
 $('.ui.dropdown')
-.dropdown()
+.dropdown({
+  on: 'hover'
+})
 ;
 
   $('.rating')
@@ -11,6 +13,6 @@ $('.ui.dropdown')
   });
 
   $('.modal')
-  .modal('attach events', '#cart', 'show')
+  .modal('attach events', '#cart-btn', 'show')
   ;
 })
