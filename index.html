@@ -6,9 +6,7 @@
     <title>amaRomach</title>
     <link rel="shortcut icon" href="images/amazon-icon.jpg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
-    <link rel="stylesheet" type="text/css" href="styles/cart.css">
-    <link rel="stylesheet" type="text/css" href="styles/cards.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -19,7 +17,7 @@
 <body>
   <div class="ui inverted segment">
     <div class="ui grid">
-        <div class="row padding-bottom-zero">
+        <div class="row no-padding-bottom">
             <div class="four wide column">
                 <div id="amaRomach-logo" class="ui inverted segment">
                     <a><img class="ui huge image" src="images/amaromach.png" alt=""></a>
@@ -36,10 +34,10 @@
                 </div>
         </div>
         </div>
-        <div class="row padding-bottom-zero">
-          <div class="twelve wide column padding-right-zero"></div>
-          <div id="browse-container" class="ui right aligned two wide column">
-            <div class="ui inverted segment padding-bottom-zero padding-right-zero padding-left-zero">
+        <div class="row no-padding-bottom">
+          <!--<div class="twelve wide column no-padding-right"></div> -->
+          <div id="browse-container" class="ui right floated center aligned two wide column">
+            <div class="ui inverted segment no-padding-bottom no-padding-right no-padding-left">
               <div id="browse-item" class="ui inline floating dropdown right floated"> 
                 <div class="ui medium inverted header text"> Account&Lists </div>
                 <i class="ui large dropdown icon"></i> 
@@ -63,11 +61,11 @@
               </div>
             </div>
               </div>
-              <div id="cart-grid" class="ui right aligned two wide column">
+              <div id="cart-grid" class="ui two wide column">
                   <span id="product-count" class="parenthesis ui orange header">2</span>
-                  <div id="cart-btn" class="inline cart-link">
+                  <div id="cart" class="inline">
                       <i class="ui shop large white right floated icon"></i>
-                      <div class="ui medium inverted header cart-header margin-top-zero">  cart </div>
+                      <div class="ui medium inverted header cart-header no-margin-top">  cart </div>
                   </div>
               </div>
                 </div>
@@ -85,19 +83,21 @@
           <img src="images/coconut.jfif">
         </div>
         <div class="content">
-          <div class="ui huge header"> coconut </div> 
-          <div class="ui right floated"><i class="ui small red close icon red-close-icon"></i></div>
+          <div class="ui large header"> coconut </div> 
+          <div class="ui right floated"><i class="ui large red close icon red-close-icon"></i></div>
           <div class="description">
-            <div class="ui list">
-              <div class="item">
-                <div class="ui large header"> Good coconut make oil for your beard </div>
+            <div class="ui grid">
+              <div class="row">
+                <div class="ui medium header"> Good coconut make oil for your beard </div>
               </div>
-              <div class="item">
-                <div class="ui large header">
-                  <i class="small shekel sign icon compact-icon"></i>100.00
+              <div class="row">
+                <div class="ui four wide column">
+                  <div class="ui fluid small header">
+                    <i class="small shekel sign icon compact-icon"></i>100.00
+                  </div>    
                 </div>
               </div>
-              <div class="item">
+              <div class="row">
                 <div class="ui selection dropdown">
                   <input name="gender" type="hidden">
                   <div class="default text">1</div>
@@ -118,20 +118,22 @@
           <img src="images/jsBook.jfif">
         </div>
         <div class="content">
-          <div class="ui huge header"> JS book for beginners</div>
-          <div class="ui right floated"><i class="ui small red close icon red-close-icon"></i></div>
+          <div class="ui large header"> JS book for beginners</div>
+          <div class="ui right floated"><i class="ui large red close icon red-close-icon"></i></div>
           <div class="description">
-            <div class="ui list">
-              <div class="item">
-                <div class="ui large header"> Digital javascript book to start coding
+            <div class="ui grid">
+              <div class="row">
+                <div class="ui medium header"> Digital javascript book to start coding
                   your first js website </div>
               </div>
-              <div class="item">
-                <div class="ui large header ">
-                  <i class="small shekel sign icon compact-icon"></i>330.00
+              <div class="row">
+                <div class="ui four wide column">
+                  <div class="ui fluid small header">
+                    <i class="small shekel sign icon compact-icon"></i>330.00
+                  </div>    
                 </div>
               </div>
-              <div class="item">
+              <div class="row">
                 <div class="ui transparent small-input input">
                   <input type="number" value="1" >
                 </div>

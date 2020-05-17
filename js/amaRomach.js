@@ -13,6 +13,6 @@ $('.ui.dropdown')
   });
 
   $('.modal')
-  .modal('attach events', '#cart-btn', 'show')
+  .modal('attach events', '#cart', 'show')
   ;
 })

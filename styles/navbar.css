@@ -13,16 +13,16 @@ body {
   padding: 6.8% 0 0 0;
   margin-left: 1%;
 }
-.margin-top-zero {
+.no-margin-top {
   margin-top: 0 !important;
 }
-.padding-right-zero {
+.no-padding-right {
   padding-right: 0 !important;
 }
-.padding-bottom-zero {
+.no-padding-bottom {
   padding-bottom: 0 !important;
 }
-.padding-left-zero {
+.no-padding-left {
   padding-left: 0 !important;
 }
 .compact-icon {
