@@ -32,6 +32,9 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
+.inherited-background div {
+  background-color: inherit;
+}
 #product-count {
   margin-bottom: 0;
   margin-right: 79%;
@@ -64,9 +67,6 @@ body {
 }
 #total-price {
   margin-left: 6% !important;
-}
-.amaRomach-cart-item {
-  padding-left: 0.5% !important;
 }
 .header-link:hover {
   color: #aca220 !important;
