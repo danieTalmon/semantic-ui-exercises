@@ -1,0 +1,22 @@
+{
+  "name": "semantic-ui-exercises",
+  "version": "1.0.0",
+  "description": "sematic-ui-exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieTalmon/semantic-ui-exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieTalmon/semantic-ui-exercises/issues"
+  },
+  "homepage": "https://github.com/danieTalmon/semantic-ui-exercises#readme",
+  "dependencies": {
+    "fomantic-ui": "^2.8.4"
+  }
+}

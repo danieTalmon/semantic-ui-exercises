@@ -1,2 +1,2 @@
-# sematic-ui-exercises
-sematic-ui-exercises
+# semantic-ui-exercises
+semantic-ui-exercises
