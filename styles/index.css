@@ -32,9 +32,6 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-.inherited-background div {
-  background-color: inherit;
-}
 #product-count {
   margin-bottom: 0;
   margin-right: 79%;

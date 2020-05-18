@@ -32,6 +32,3 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-.inherited-background div {
-  background-color: inherit;
-}
